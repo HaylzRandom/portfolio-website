@@ -9,6 +9,7 @@ import './projectContainer.css';
 const ProjectContainer = ({ project }) => {
 	return (
 		<div className='project'>
+			<img src='./images/haylzpic.png' alt='' className='project__image' />
 			<h3>{project.name}</h3>
 
 			<p className='project__description'>{project.description}</p>
@@ -30,7 +31,7 @@ const ProjectContainer = ({ project }) => {
 					target='_blank'
 					rel='noreferrer'
 				>
-					<FontAwesomeIcon  icon={faGithub} />
+					<FontAwesomeIcon icon={faGithub} />
 				</a>
 			)}
 
@@ -42,10 +43,7 @@ const ProjectContainer = ({ project }) => {
 					target='_blank'
 					rel='noreferrer'
 				>
-					<FontAwesomeIcon
-						
-						icon={faArrowUpRightFromSquare}
-					/>
+					<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
 				</a>
 			)}
 		</div>

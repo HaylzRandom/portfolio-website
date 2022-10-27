@@ -1,0 +1,89 @@
+.contact {
+    text-align: center;
+}
+
+.contact__description {
+    margin-bottom: 2em;
+}
+
+.contact-form {
+    display: grid;
+    /* grid-template-columns: repeat(2, 200px);
+    grid-template-rows: minmax(120px, auto) repeat(4, 100px); */
+    grid-template-areas:
+        '. name email .'
+        '. subject subject .'
+        '. message message .'
+        '. submit submit .';
+    place-content: center;
+    gap: 2em;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: column-reverse;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    position: relative;
+}
+
+
+input,
+textarea {
+    border: 1px solid var(--clr-primary);
+    border-radius: 1em;
+    padding: 0.5em;
+    caret-color: var(--clr-primary);
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: calc(1rem - 0.15rem);
+}
+
+label {
+    color: var(--clr-primary);
+    font-weight: 900;
+}
+
+.form-group.name {
+    grid-area: name;
+}
+
+.form-group.email {
+    grid-area: email;
+}
+
+.form-group.subject {
+    grid-area: subject;
+}
+
+.form-group.message {
+    grid-area: message;
+
+}
+
+.submit-btn {
+    grid-area: submit;
+    place-self: center;
+    background-color: var(--clr-primary);
+    border: 0;
+    width: 80%;
+    border-radius: 100vw;
+    padding: 1em;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    box-shadow: var(--shadow);
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+}

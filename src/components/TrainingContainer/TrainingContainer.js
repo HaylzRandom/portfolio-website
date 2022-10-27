@@ -7,11 +7,12 @@ import './trainingContainer.css';
 const TrainingContainer = ({ training }) => {
 	return (
 		<div className='course'>
+			<img src='./images/haylzpic.png' alt='' className='course__logo' />
 
 			<h3>{training.name}</h3>
 
 			<p className='course__description'>{training.description}</p>
-			<img src="" alt="" />
+			<img src='' alt='' />
 			<div className='course__links'>
 				{training.courseLink && (
 					<a

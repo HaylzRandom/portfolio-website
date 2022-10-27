@@ -13,6 +13,8 @@ import Projects from './components/Projects/Projects';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Skills from './components/Skills/Skills';
 import Training from './components/Training/Training';
+import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
 
 const App = () => {
 	const [{ themeName }] = useContext(ThemeContext);
@@ -25,9 +27,11 @@ const App = () => {
 				<Training />
 				<Projects />
 				<Skills />
+				<Contact />
 			</main>
 
 			<ScrollToTop />
+			<Footer />
 		</div>
 	);
 };

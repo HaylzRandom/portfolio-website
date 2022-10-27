@@ -5,8 +5,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1em;
 }
 
 .skills__list-item {
     margin: 0.5em;
+    border-radius: 1000vw;
+    border: 1px solid var(--clr-primary);
 }

@@ -13,7 +13,7 @@ import './about.css';
 const About = () => {
 	const { name, role, description, social } = about;
 	return (
-		<div className='about center'>
+		<section className='about center'>
 			{name && (
 				<h1>
 					Hi, I am <span className='about__name'>{name}.</span>
@@ -80,7 +80,7 @@ const About = () => {
 					</>
 				)}
 			</div>
-		</div>
+		</section>
 	);
 };
 export default About;
