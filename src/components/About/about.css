@@ -1,0 +1,44 @@
+.about {
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.about__name {
+    color: var(--clr-primary);
+}
+
+.about__role {
+    margin-top: 1.2em;
+}
+
+.about__desc {
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.about__desc,
+.about__contact {
+    margin-top: 2.4em;
+}
+
+.about__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+}
+
+.about .btn--outline {
+    margin-right: 1em;
+}
+
+.frontend-mentor {
+    margin-bottom: -5px;
+}
+
+@media screen and (max-width: 600px) {
+    .app .about {
+        margin-top: 2em;
+        text-align: center;
+    }
+}
