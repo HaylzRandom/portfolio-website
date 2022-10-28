@@ -9,7 +9,11 @@ import './projectContainer.css';
 const ProjectContainer = ({ project }) => {
 	return (
 		<div className='project'>
-			<img src='./images/haylzpic.png' alt='' className='project__image' />
+			<img
+				src={project.image}
+				alt={`Screenshot of ${project.name}`}
+				className='project__image'
+			/>
 			<h3>{project.name}</h3>
 
 			<p className='project__description'>{project.description}</p>

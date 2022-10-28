@@ -1,7 +1,9 @@
 import { useContext } from 'react';
+import { ToastContainer } from 'react-toastify';
 
 // Styles
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Contexts
 import { ThemeContext } from './contexts/theme';
@@ -32,6 +34,7 @@ const App = () => {
 
 			<ScrollToTop />
 			<Footer />
+			<ToastContainer />
 		</div>
 	);
 };

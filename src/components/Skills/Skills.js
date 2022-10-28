@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import { skills } from '../../portfolio';
+import SkillsContainer from '../SkillsContainer/SkillsContainer';
 
 // Styles
 import './skills.css';
@@ -11,9 +12,7 @@ const Skills = () => {
 			<h2 className='section__title'>Skills</h2>
 			<ul className='skills__list'>
 				{skills.map((skill) => (
-					<li className='skills__list-item btn btn--plain' key={uuidv4()}>
-						{skill}
-					</li>
+					<SkillsContainer key={uuidv4()} skill={skill} />
 				))}
 			</ul>
 		</section>

@@ -1,0 +1,28 @@
+.footer {
+    padding: 3em 0;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.footer__link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--clr-fg);
+    border: 1px solid var(--clr-primary);
+    border-radius: 1000vw;
+    padding: 1.5em;
+    display: inline-block;
+}
+
+.footer__link:hover {
+    background-color: var(--clr-primary);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 2em;
+        margin-top: 3em;
+    }
+}

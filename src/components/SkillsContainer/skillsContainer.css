@@ -1,0 +1,27 @@
+.skills__list-item {
+    width: 8em;
+    margin-bottom: 0;
+    padding: 1em 0.5em;
+    /* border: 1px solid var(--clr-primary); */
+    border-radius: 100vw;
+    font-size: inherit;
+    font-weight: 700;
+    text-align: center;
+    color: var(--clr-fg);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.skills-list__item--img {
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.skills-list__item--text {
+    width: 10ch;
+    font-size: 0.8rem;
+}

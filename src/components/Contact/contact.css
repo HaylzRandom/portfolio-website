@@ -87,3 +87,15 @@ label {
 .submit-btn:hover {
     opacity: 0.8;
 }
+
+@media (max-width: 600px) {
+    .contact-form {
+        grid-template-areas:
+            'name'
+            'email'
+            'subject'
+            'message'
+            'submit';
+        gap: 1em;
+    }
+}

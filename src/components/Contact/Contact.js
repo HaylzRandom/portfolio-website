@@ -1,51 +1,85 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+
 // Styles
 import './contact.css';
 
 const Contact = () => {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				'service_4t5y6hv',
+				'template_skmb7o9',
+				form.current,
+				'WRdR97UjnnZ-hSL8h'
+			)
+			.then(
+				(result) => {
+					toast.success('Email has been sent! Thank you!');
+				},
+				(error) => {
+					toast.error('Unfortunately there was an error', error.text);
+				}
+			);
+
+		e.target.reset();
+	};
+
 	return (
 		<section id='contact' className='section contact'>
-			<h2 class='section__title'>Contact Me</h2>
-			<p class='contact__description'>
+			<h2 className='section__title'>Contact Me</h2>
+			<p className='contact__description'>
 				Use the form below to contact me for my CV and anything else you may
 				want to ask!
 			</p>
-			<form id='contact-form' class='contact-form' autoComplete='off'>
-				<div class='form-group name'>
+			<form
+				id='contact-form'
+				className='contact-form'
+				autoComplete='off'
+				ref={form}
+				onSubmit={sendEmail}
+			>
+				<div className='form-group name'>
 					<input
 						type='name'
 						name='name'
-						class='form-control'
+						className='form-control'
 						id='name'
 						placeholder='Enter your name...'
 					/>
-					<label for='name'>Name</label>
+					<label htmlFor='name'>Name</label>
 				</div>
 
-				<div class='form-group email'>
+				<div className='form-group email'>
 					<input
 						type='email'
 						name='email'
-						class='form-control'
+						className='form-control'
 						id='email'
 						placeholder='Enter your e-mail address...'
 						required
 					/>
-					<label for='email'>E-mail Address</label>
+					<label htmlFor='email'>E-mail Address</label>
 				</div>
 
-				<div class='form-group subject'>
+				<div className='form-group subject'>
 					<input
 						type='text'
 						name='subject'
-						class='form-control'
+						className='form-control'
 						id='subject'
 						placeholder='Enter your e-mail subject...'
 						required
 					/>
-					<label for='subject'>E-mail Subject</label>
+					<label htmlFor='subject'>E-mail Subject</label>
 				</div>
 
-				<div class='form-group message'>
+				<div className='form-group message'>
 					<textarea
 						name='message'
 						id='message'
@@ -55,10 +89,10 @@ const Contact = () => {
 						wrap='soft'
 						required
 					></textarea>
-					<label for='message'>Message</label>
+					<label htmlFor='message'>Message</label>
 				</div>
 
-				<button class='submit-btn' id='submitBtn' type='submit'>
+				<button className='submit-btn' id='submitBtn' type='submit'>
 					Submit
 				</button>
 			</form>
