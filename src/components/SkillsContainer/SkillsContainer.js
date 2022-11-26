@@ -5,7 +5,7 @@ const SkillsContainer = ({ skill }) => {
 	return (
 		<li className='skills__list-item btn btn--plain'>
 			<img
-				src={skill.logo}
+				src={process.env.PUBLIC_URL + skill.logo}
 				alt={skill.name}
 				className='skills-list__item--img'
 			/>

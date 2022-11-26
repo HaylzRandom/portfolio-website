@@ -8,7 +8,7 @@ const TrainingContainer = ({ training }) => {
 	return (
 		<div className='course'>
 			<img
-				src={training.logo}
+				src={process.env.PUBLIC_URL + training.logo}
 				alt={training.logoAlt}
 				className='course__logo'
 			/>

@@ -11,7 +11,7 @@ import { about } from '../../portfolio';
 import './about.css';
 
 const About = () => {
-	const { name, role, description, social } = about;
+	const { name, role, description, cvLink, social } = about;
 	return (
 		<section className='about center'>
 			{name && (
@@ -33,8 +33,7 @@ const About = () => {
 								className='link link--icon'
 								target='_blank'
 								rel='noreferrer'
-								title='Github'
-							>
+								title='Github'>
 								<FontAwesomeIcon icon={faGithub} />
 							</a>
 						)}
@@ -46,8 +45,7 @@ const About = () => {
 								className='link link--icon'
 								target='_blank'
 								rel='noreferrer'
-								title='LinkedIn'
-							>
+								title='LinkedIn'>
 								<FontAwesomeIcon icon={faLinkedin} />
 							</a>
 						)}
@@ -59,8 +57,7 @@ const About = () => {
 								className='link link--icon'
 								target='_blank'
 								rel='noreferrer'
-								title='freeCodeCamp'
-							>
+								title='freeCodeCamp'>
 								<FontAwesomeIcon icon={faFreeCodeCamp} />
 							</a>
 						)}
@@ -72,12 +69,20 @@ const About = () => {
 								className='link link--icon'
 								target='_blank'
 								rel='noreferrer'
-								title='frontendMentor'
-							>
+								title='frontendMentor'>
 								<SiFrontendmentor className='frontend-mentor' />
 							</a>
 						)}
 					</>
+				)}
+			</div>
+			<div className='about__cv'>
+				{cvLink && (
+					<a href={cvLink} target='_blank' rel='noreferrer'>
+						<button type='button' className='cv__btn'>
+							Download CV
+						</button>
+					</a>
 				)}
 			</div>
 		</section>

@@ -10,46 +10,48 @@ const ProjectContainer = ({ project }) => {
 	return (
 		<div className='project'>
 			<img
-				src={project.image}
+				src={process.env.PUBLIC_URL + project.image}
 				alt={`Screenshot of ${project.name}`}
 				className='project__image'
 			/>
-			<h3>{project.name}</h3>
+			<div className='project__info--container'>
+				<h3>{project.name}</h3>
 
-			<p className='project__description'>{project.description}</p>
-			{project.stack && (
-				<ul className='project__stack'>
-					{project.stack.map((item) => (
-						<li className='project__stack-item' key={uuidv4()}>
-							{item}
-						</li>
-					))}
-				</ul>
-			)}
+				<p className='project__description'>{project.description}</p>
+				{project.stack && (
+					<ul className='project__stack'>
+						{project.stack.map((item) => (
+							<li className='project__stack-item' key={uuidv4()}>
+								{item}
+							</li>
+						))}
+					</ul>
+				)}
 
-			{project.sourceCode && (
-				<a
-					href={project.sourceCode}
-					aria-label='source code'
-					className='link link--icon'
-					target='_blank'
-					rel='noreferrer'
-				>
-					<FontAwesomeIcon icon={faGithub} />
-				</a>
-			)}
+				{project.sourceCode && (
+					<a
+						href={project.sourceCode}
+						aria-label='source code'
+						className='link link--icon'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<FontAwesomeIcon icon={faGithub} />
+					</a>
+				)}
 
-			{project.livePreview && (
-				<a
-					href={project.livePreview}
-					aria-label='live preview'
-					className='link link--icon'
-					target='_blank'
-					rel='noreferrer'
-				>
-					<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-				</a>
-			)}
+				{project.livePreview && (
+					<a
+						href={project.livePreview}
+						aria-label='live preview'
+						className='link link--icon'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+					</a>
+				)}
+			</div>
 		</div>
 	);
 };

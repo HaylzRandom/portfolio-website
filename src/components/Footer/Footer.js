@@ -8,6 +8,7 @@ const Footer = () => {
 				href='https://github.com/haylzrandom'
 				className='footer__link'
 				target='_blank'
+				rel='noreferrer'
 			>
 				Created by Hayley McCafferty
 			</a>

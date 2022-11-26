@@ -36,6 +36,56 @@
     margin-bottom: -5px;
 }
 
+.about__cv {
+    margin-top: 2.5em;
+}
+
+.cv__btn {
+    border-radius: 1000vw;
+    padding: 1em 1.5em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.light .cv__btn {
+    background: var(--clr-bg-alt);
+    color: var(--clr-primary);
+    border: 0.25rem solid var(--clr-primary);
+}
+
+.dark .cv__btn {
+    background: var(--clr-fg);
+    color: var(--clr-bg);
+    box-shadow: 1px 0px 20px 3px var(--clr-primary);
+    -webkit-box-shadow: 1px 0px 20px 3px var(--clr-primary);
+    -moz-box-shadow: 1px 0px 20px 3px var(--clr-primary);
+}
+
+.cv__btn:hover {
+    color: #fff;
+}
+
+.cv__btn::after {
+    content: "";
+    background: var(--clr-primary);
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+    transition: all 0.3s ease;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+}
+
+.cv__btn:hover::after {
+    transform: scale(1.5, 1.5) rotate(0deg);
+}
+
 @media screen and (max-width: 600px) {
     .app .about {
         margin-top: 2em;

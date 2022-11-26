@@ -13,7 +13,11 @@ const Header = () => {
 			<h3>
 				{homepage && (
 					<a href={homepage} className='link'>
-						<img src={logo} alt='Logo' className='logo-img' />
+						<img
+							src={process.env.PUBLIC_URL + logo}
+							alt='Logo'
+							className='logo-img'
+						/>
 					</a>
 				)}
 			</h3>
