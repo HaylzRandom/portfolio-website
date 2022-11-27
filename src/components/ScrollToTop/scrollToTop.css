@@ -6,7 +6,7 @@
 }
 
 .scroll-top:hover {
-    color: var(--clr-primary);
+    color: rgb(var(--clr-primary));
 }
 
 @media screen and (max-width: 900px) {

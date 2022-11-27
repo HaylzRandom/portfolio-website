@@ -4,7 +4,7 @@
 }
 
 .about__name {
-    color: var(--clr-primary);
+    color: rgb(var(--clr-primary));
 }
 
 .about__role {
@@ -49,17 +49,17 @@
 }
 
 .light .cv__btn {
-    background: var(--clr-bg-alt);
-    color: var(--clr-primary);
-    border: 0.25rem solid var(--clr-primary);
+    background: rgb(var(--clr-bg-alt));
+    color: rgb(var(--clr-primary));
+    border: 0.25rem solid rgb(var(--clr-primary));
 }
 
 .dark .cv__btn {
-    background: var(--clr-fg);
-    color: var(--clr-bg);
-    box-shadow: 1px 0px 20px 3px var(--clr-primary);
-    -webkit-box-shadow: 1px 0px 20px 3px var(--clr-primary);
-    -moz-box-shadow: 1px 0px 20px 3px var(--clr-primary);
+    background: rgb(var(--clr-fg));
+    color: rgb(var(--clr-bg));
+    box-shadow: 1px 0px 20px 3px rgb(var(--clr-primary));
+    -webkit-box-shadow: 1px 0px 20px 3px rgb(var(--clr-primary));
+    -moz-box-shadow: 1px 0px 20px 3px rgb(var(--clr-primary));
 }
 
 .cv__btn:hover {
@@ -68,7 +68,7 @@
 
 .cv__btn::after {
     content: "";
-    background: var(--clr-primary);
+    background: rgba(var(--clr-primary));
     position: absolute;
     z-index: -1;
     padding: 0.85em 0.75em;

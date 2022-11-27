@@ -4,25 +4,27 @@
   font-family: 'Fira Sans',
     sans-serif;
   line-height: 1.5;
-  color: var(--clr-fg);
-  background-color: var(--clr-bg);
+  color: rgb(var(--clr-fg));
+  background-color: rgb(var(--clr-bg));
 }
 
 .light {
-  --clr-bg: #fcfcfc;
-  --clr-bg-alt: #fff;
-  --clr-fg: #555;
-  --clr-fg-alt: #444;
-  --clr-primary: rgb(137, 88, 176);
+  --clr-bg: 252, 252, 252;
+  --clr-bg-alt: 255, 255, 255;
+  --clr-fg: 85, 85, 85;
+  --clr-fg-alt: 68, 68, 68;
+  /* --clr-primary: rgba(137, 88, 176); */
+  --clr-primary: 137, 88, 176;
   --shadow: rgba(137, 88, 176, 0.2) 0 7px 29px 0;
 }
 
 .dark {
-  --clr-bg: #0D0811;
-  --clr-bg-alt: #1B1123;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: rgb(137, 88, 176);
+  --clr-bg: 13, 8, 17;
+  --clr-bg-alt: 27, 17, 35;
+  --clr-fg: 189, 189, 221;
+  --clr-fg-alt: 205, 205, 255;
+  /* --clr-primary: rgb(137, 88, 176); */
+  --clr-primary: 137, 88, 176;
   --shadow: rgba(137, 88, 176, 0.25) 5px 5px 15px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -40,7 +42,7 @@ main {
 .section__title {
   text-align: center;
   margin-bottom: 1em;
-  color: var(--clr-primary);
+  color: rgb(var(--clr-primary));
 }
 
 .center {
@@ -49,13 +51,13 @@ main {
 }
 
 .link {
-  color: var(--clr-primary);
+  color: rgb(var(--clr-primary));
   padding: 0 0 0.3em 0;
   position: relative;
 }
 
 .link:hover {
-  color: var(--clr-primary);
+  color: rgb(var(--clr-primary));
 }
 
 .link::before {
@@ -65,7 +67,7 @@ main {
   height: 0.2em;
   position: absolute;
   bottom: 0;
-  background-color: var(--clr-primary);
+  background-color: rgb(var(--clr-primary));
   transition: width 0.2s ease-in;
 }
 
@@ -75,11 +77,11 @@ main {
 }
 
 .link--nav {
-  color: var(--clr-fg);
+  color: rgb(var(--clr-fg));
 }
 
 .link--icon {
-  color: var(--clr-fg);
+  color: rgb(var(--clr-fg));
   font-size: 1.75rem;
 }
 
@@ -94,8 +96,8 @@ main {
 }
 
 .btn--outline {
-  color: var(--clr-primary);
-  border: 2px solid var(--clr-primary);
+  color: rgb(var(--clr-primary));
+  border: 2px solid rgb(var(--clr-primary));
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -103,13 +105,13 @@ main {
 
 .btn--outline:hover,
 .btn--outline:focus {
-  color: var(--clr-bg);
+  color: rgb(var(--clr-bg));
 }
 
 .btn--outline::before {
   content: '';
   position: absolute;
-  background-color: var(--clr-primary);
+  background-color: rgb(var(--clr-primary));
   right: 100%;
   bottom: 0;
   left: 0;
@@ -131,7 +133,7 @@ main {
 }
 
 .light .btn--plain {
-  background-color: var(--clr-bg-alt);
+  background-color: rgb(var(--clr-bg-alt));
 }
 
 .btn--plain:hover {
@@ -144,7 +146,7 @@ main {
 
 .btn--icon:hover,
 .btn--icon:focus {
-  color: var(--clr-primary);
+  color: rgb(var(--clr-primary));
 }
 
 .btn--icon:active {

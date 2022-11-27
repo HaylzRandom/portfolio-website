@@ -10,7 +10,7 @@
     width: 2.5em;
     height: 2.5em;
     border-radius: 50%;
-    border: 2px solid var(--clr-primary);
+    border: 2px solid rgb(var(--clr-primary));
 }
 
 .logo-img:hover {

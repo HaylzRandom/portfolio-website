@@ -7,9 +7,9 @@ const about = {
 	name: 'Hayley McCafferty',
 	role: 'Front End Developer',
 	description:
-		'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi harum reiciendis animi, provident dolor ipsa illo suscipit cum molestias alias, veniam, fugiat ullam nulla perspiciatis.',
+		'Front End Web Developer enthusiast looking for my place in the world of web development as part of a career shift!',
 	social: {
-		linkedin: 'https://linkedin.com/hayleymcc',
+		linkedin: 'https://www.linkedin.com/in/hayleymcc/',
 		github: 'https://github.com/haylzrandom',
 		freeCodeCamp: 'https://freeCodecamp.org',
 		frontEndMentor: 'https://frontendMentor.com',
@@ -21,7 +21,7 @@ const projects = [
 	{
 		name: 'REST Countries API with Colour Theme Switcher',
 		description:
-			'React project that pulls data from REST Countries API and display on website. Users can also search for specific countries by name or by region',
+			'React project that pulls data from REST Countries API and displays on website. Users can also search for specific countries by name or by region',
 		stack: [
 			'React',
 			'HTML5',
@@ -38,7 +38,7 @@ const projects = [
 	{
 		name: 'Angel Tech Helpdesk System - MERN Project',
 		description:
-			'React project that pulls data from REST Countries API and display on website. Users can also search for specific countries by name or by region',
+			'React project that pulls data from REST Countries API and displays on website. Users can also search for specific countries by name or by region',
 		stack: ['React', 'Redux', 'MongoDB', 'Node.js', 'Express.js', 'JWT'],
 		sourceCode: 'https://github.com/HaylzRandom/angeltech-frontend',
 		livePreview: 'https://angeltech-helpdesk.onrender.com/',
@@ -102,76 +102,80 @@ const projects = [
 
 const training = [
 	{
-		name: 'Training Course 1',
+		name: 'Front-End Engineer',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis!',
-		courseLink: 'https://freecodecamp.org',
-		certLink: 'https://freecodecamp.org',
+			'Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you the technologies you need to do just that.',
+		description2:
+			'Technologies include: HTML5, CSS3, JavaScript, React, Redux, Testing and much more.',
+		courseLink:
+			'https://www.codecademy.com/learn/paths/front-end-engineer-career-path',
+		certLink:
+			'https://www.codecademy.com/profiles/haylzrandom/certificates/5f85dd867b67b60014ac9ea3',
 		logo: '/images/training/codeacademy.png',
 		logoAlt: 'CodeAcademy Logo',
 	},
 	{
-		name: 'Training Course 1',
+		name: 'Complete Web Developer in 2023: Zero to Mastery',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis!',
-		courseLink: 'https://freecodecamp.org',
-		certLink: 'https://freecodecamp.org',
-		logo: '/images/training/freeCodeCamp.png',
-		logoAlt: 'CodeAcademy Logo',
-	},
-	{
-		name: 'Training Course 1',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis!',
-		courseLink: 'https://freecodecamp.org',
-		certLink: 'https://freecodecamp.org',
-		logo: '/images/training/uDemy.png',
-		logoAlt: 'CodeAcademy Logo',
-	},
-	{
-		name: 'Training Course 1',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis!',
-		courseLink: 'https://freecodecamp.org',
-		certLink: 'https://freecodecamp.org',
+			'Learn to code from scratch and get hired as a Web Developer in 2023. This full-stack coding bootcamp will teach you HTML, CSS, JavaScript, React, Node.js, Machine Learning & more.',
+		courseLink: 'https://zerotomastery.io/courses/coding-bootcamp/',
+		certLink:
+			'https://drive.google.com/file/d/1Xy8R8LN962FFT9l6MoefybtOnT79gZJ4/view',
 		logo: '/images/training/zTm.png',
-		logoAlt: 'CodeAcademy Logo',
+		logoAlt: 'ZeroToMastery Logo',
 	},
 	{
-		name: 'Training Course 1',
+		name: 'Complete React Developer in 2023(w/ Redux, Hooks, GraphQL): Zero to Mastery',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis!',
+			'Learn from React.js experts. This is the only React JS tutorial + projects course you need to learn React, build advanced large-scale applications from scratch and get hired as a React Developer in 2023.',
 		courseLink: 'https://freecodecamp.org',
-		certLink: 'https://freecodecamp.org',
-		logo: '/images/training/codeacademy.png',
-		logoAlt: 'CodeAcademy Logo',
+		certLink:
+			'https://drive.google.com/file/d/1Pk-d2rMchQ-3qhyR5jkScbjKv6PjPG54/view',
+		logo: '/images/training/zTm.png',
+		logoAlt: 'ZeroToMastery Logo',
 	},
 	{
-		name: 'Training Course 1',
+		name: 'Responsive Web Design',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis!',
-		courseLink: 'https://freecodecamp.org',
-		certLink: 'https://freecodecamp.org',
-		logo: '/images/training/codeacademy.png',
-		logoAlt: 'CodeAcademy Logo',
+			'Certification course covering: HTML, HTML5, CSS3, Visual Design, Accessibility, Responsive Web Design Principles, CSS Grid, CSS Flexbox',
+		courseLink:
+			'https://www.freecodecamp.org/learn/2022/responsive-web-design/',
+		certLink:
+			'https://www.freecodecamp.org/certification/haylzrandom/responsive-web-design',
+		logo: '/images/training/freeCodeCamp.png',
+		logoAlt: 'freeCodeCamp Logo',
 	},
 	{
-		name: 'Training Course 1',
+		name: 'JavaScript Algorithms and Data Structures',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis!',
-		courseLink: 'https://freecodecamp.org',
-		certLink: 'https://freecodecamp.org',
-		logo: '/images/training/codeacademy.png',
-		logoAlt: 'CodeAcademy Logo',
+			'Fundamentals of JavaScript including variables, arrays, objects, loops and functions. Knowledge to create algorithms to manipulate strings, factorialize numbers and learn two important programming paradigms OOP and FP.',
+		courseLink:
+			'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/',
+		certLink:
+			'https://www.freecodecamp.org/certification/haylzrandom/javascript-algorithms-and-data-structures',
+		logo: '/images/training/freeCodeCamp.png',
+		logoAlt: 'freeCodeCamp Logo',
 	},
 	{
-		name: 'Training Course 1',
+		name: 'Front End Development Libraries',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis!',
-		courseLink: 'https://freecodecamp.org',
-		certLink: 'https://freecodecamp.org',
-		logo: '/images/training/codeacademy.png',
-		logoAlt: 'CodeAcademy Logo',
+			'Learn how to style a site quickly with Bootstrap, add logic to CSS styles and extend them with SASS. Also learn to create SPAs with React and Redux.',
+		courseLink:
+			'https://www.freecodecamp.org/learn/front-end-development-libraries/',
+		certLink:
+			'https://www.freecodecamp.org/certification/haylzrandom/front-end-development-libraries',
+		logo: '/images/training/freeCodeCamp.png',
+		logoAlt: 'freeCodeCamp Logo',
+	},
+	{
+		name: 'React Front to Back 2022',
+		description:
+			'Learn modern React by building 4 projects including a Firebase 9 app and a full stack MERN app',
+		courseLink: 'https://www.udemy.com/course/react-front-to-back-2022/',
+		certLink:
+			'https://www.udemy.com/certificate/UC-603615e9-b62c-4beb-a301-cd35ca301536/',
+		logo: '/images/training/uDemy.png',
+		logoAlt: 'uDemy Logo',
 	},
 ];
 

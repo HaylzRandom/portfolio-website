@@ -34,16 +34,14 @@ const Contact = () => {
 		<section id='contact' className='section contact'>
 			<h2 className='section__title'>Contact Me</h2>
 			<p className='contact__description'>
-				Use the form below to contact me for my CV and anything else you may
-				want to ask!
+				Use the form below to contact me about anything!
 			</p>
 			<form
 				id='contact-form'
 				className='contact-form'
 				autoComplete='off'
 				ref={form}
-				onSubmit={sendEmail}
-			>
+				onSubmit={sendEmail}>
 				<div className='form-group name'>
 					<input
 						type='name'
@@ -87,8 +85,7 @@ const Contact = () => {
 						rows='10'
 						placeholder='Write your message here...'
 						wrap='soft'
-						required
-					></textarea>
+						required></textarea>
 					<label htmlFor='message'>Message</label>
 				</div>
 

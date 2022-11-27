@@ -16,6 +16,10 @@ const TrainingContainer = ({ training }) => {
 			<h3>{training.name}</h3>
 
 			<p className='course__description'>{training.description}</p>
+			{training.description2 && (
+				<p className='course__description'>{training.description2}</p>
+			)}
+
 			<div className='course__links'>
 				{training.courseLink && (
 					<a
@@ -24,7 +28,7 @@ const TrainingContainer = ({ training }) => {
 						className='link link--icon'
 						target='_blank'
 						rel='noreferrer'
-					>
+						title={`${training.name} Course Link`}>
 						<FontAwesomeIcon icon={faLink} />
 					</a>
 				)}
@@ -35,7 +39,7 @@ const TrainingContainer = ({ training }) => {
 						className='link link--icon'
 						target='_blank'
 						rel='noreferrer'
-					>
+						title={`${training.name} Certificate Link`}>
 						<FontAwesomeIcon icon={faCertificate} />
 					</a>
 				)}

@@ -7,7 +7,7 @@
     font-size: inherit;
     font-weight: 700;
     text-align: center;
-    color: var(--clr-fg);
+    color: rgb(var(--clr-fg));
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;

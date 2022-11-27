@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { projects } from '../../portfolio';
+import { projects, about } from '../../portfolio';
 
 // Components
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
@@ -18,6 +18,17 @@ const Projects = () => {
 					<ProjectContainer key={uuidv4()} project={project} />
 				))}
 			</div>
+			<p className='projects__more'>
+				More portfolio projects can be found at my{' '}
+				<a
+					className='link'
+					href={about.social.github}
+					target='_blank'
+					rel='noreferrer'>
+					GitHub Profile
+				</a>
+				!
+			</p>
 		</section>
 	);
 };
