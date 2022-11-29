@@ -51,7 +51,7 @@ const projects = [
 		stack: ['React', 'HTML5', 'CSS3', 'JavaScript'],
 		sourceCode: 'https://github.com/HaylzRandom/cv-online',
 		livePreview: 'https://haylzrandom.github.io/cv-online/',
-		image: '/images/projects/online-cv.png',
+		image: '/images/projects/online-CV.png',
 	},
 	{
 		name: 'Calculator App with Theme Changer',
@@ -67,8 +67,10 @@ const projects = [
 		description:
 			'Project to build a multipage Space Tourism website utilising different navigation styles, hover states and responsive designs',
 		stack: ['HTML5', 'CSS3', 'JavaScript'],
-		sourceCode: 'https://github.com/haylzrandom',
-		livePreview: 'https://github.com/haylzrandom',
+		sourceCode:
+			'https://github.com/HaylzRandom/space-tourism-multipage-website',
+		livePreview:
+			'https://haylzrandom.github.io/space-tourism-multipage-website/',
 		image: '/images/projects/space-tourism.png',
 	},
 	{
@@ -111,8 +113,8 @@ const training = [
 			'https://www.codecademy.com/learn/paths/front-end-engineer-career-path',
 		certLink:
 			'https://www.codecademy.com/profiles/haylzrandom/certificates/5f85dd867b67b60014ac9ea3',
-		logo: '/images/training/codeacademy.png',
-		logoAlt: 'CodeAcademy Logo',
+		logo: '/images/training/codecademy.png',
+		logoAlt: 'codecademy Logo',
 	},
 	{
 		name: 'Complete Web Developer in 2023: Zero to Mastery',
@@ -128,7 +130,7 @@ const training = [
 		name: 'Complete React Developer in 2023(w/ Redux, Hooks, GraphQL): Zero to Mastery',
 		description:
 			'Learn from React.js experts. This is the only React JS tutorial + projects course you need to learn React, build advanced large-scale applications from scratch and get hired as a React Developer in 2023.',
-		courseLink: 'https://freecodecamp.org',
+		courseLink: 'https://zerotomastery.io/courses/learn-react/',
 		certLink:
 			'https://drive.google.com/file/d/1Pk-d2rMchQ-3qhyR5jkScbjKv6PjPG54/view',
 		logo: '/images/training/zTm.png',
@@ -176,6 +178,16 @@ const training = [
 			'https://www.udemy.com/certificate/UC-603615e9-b62c-4beb-a301-cd35ca301536/',
 		logo: '/images/training/uDemy.png',
 		logoAlt: 'uDemy Logo',
+	},
+	{
+		name: 'Learn TypeScript',
+		description:
+			'Learn TypeScript, a superset of JavaScript that adds types to make the language scale!',
+		courseLink: 'https://www.codecademy.com/learn/learn-typescript',
+		certLink:
+			'https://www.codecademy.com/profiles/haylzrandom/certificates/56fb1e71303e37b643bb1905f31c8a09',
+		logo: '/images/training/codecademy.png',
+		logoAlt: 'Codecademy Logo',
 	},
 ];
 
