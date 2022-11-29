@@ -35,7 +35,7 @@ const App = () => {
 
 			<ScrollToTop />
 			<Footer />
-			<ToastContainer />
+			<ToastContainer theme={themeName} />
 		</div>
 	);
 };
